@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cool Black File Search</title>
+<link rel="stylesheet" href="../css.css/search.css">
+  <script src="../javascript/script.js" defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY" defer></script>
+</head>
+<body>
+  <h1>🖤 My Black File Search Page</h1>
+
+  <!-- File Search Card -->
+  <div class="card">
+    <h2>File Search</h2>
+    <input type="file" id="fileInput" multiple>
+    <input type="text" id="searchBox" placeholder="Type file name...">
+    <button onclick="searchFiles()">Search</button>
+    <div id="results"></div>
+  </div>
+
+  <!-- Google Map Card -->
+  <div class="card">
+    <h2>Google Map</h2>
+    <input type="text" id="mapSearch" placeholder="Search a place...">
+    <button onclick="goMap()">Go</button>
+    <div id="map"></div>
+  </div>
+
+  <!-- FAQ Card -->
+  <div class="card">
+    <h2>Motor FAQ</h2>
+    <div class="faq-question" onclick="toggleFAQ(this)">What is a motor?</div>
+    <div class="faq-answer">A motor is a machine that makes things move using electricity or fuel.</div>
+
+    <div class="faq-question" onclick="toggleFAQ(this)">What’s the difference between AC and DC motors?</div>
+    <div class="faq-answer">AC motors run on alternating current, DC motors run on direct current.</div>
+
+    <div class="faq-question" onclick="toggleFAQ(this)">Why are brushless motors cool?</div>
+    <div class="faq-answer">They last longer, are quieter, and don’t need brushes that wear out.</div>
+  </div>
+</body>
+</html>

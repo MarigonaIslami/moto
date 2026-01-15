@@ -1,0 +1,88 @@
+/* About Page Specific Styles */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: aliceblue;
+}
+
+.simple-nav {
+    padding: 20px;
+}
+
+.simple-nav a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), #333;
+    padding: 80px 0;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: center;
+    line-height: 1.6;
+}
+
+.stats-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.stat-item {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border-left: 4px solid var(--primary-blue);
+}
+
+.stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-blue);
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid #444;
+    margin: 60px 0;
+}
+
+.feature-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.feature h3 {
+    color: var(--primary-blue);
+    margin-bottom: 10px;
+}
+
+
+/* Mobile responsive adjustment */
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+}
