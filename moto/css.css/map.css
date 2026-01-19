@@ -1,0 +1,22 @@
+.map{
+    height: 100%;
+    width: 100%;
+    background: url('../img/map.jpg') no-repeat center center/cover;
+    position: relative;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-m-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.button-m {
+    background-color: #c1121f;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
